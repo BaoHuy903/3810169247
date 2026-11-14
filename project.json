@@ -1,0 +1,352 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "一个具有丰富环境变化和互动效果的动态锦鲤池壁纸。锦鲤支持群游、单独游动、随机转向、聚集与分散，会对鼠标靠近和投食产生自然反应。\r\n水面支持柔和、有弹性的动态涟漪。鼠标移动、点击投食、锦鲤入水、落叶、花瓣和雨滴都会产生不同强度的水波纹。落叶与花瓣会随机飘落，落水后会产生涟漪并影响附近的锦鲤。\r\n支持多种天气场景：\r\n晴天\r\n多云\r\n阴天\r\n雾天\r\n小雨\r\n大雨\r\n雷雨\r\n小雪\r\n大雪\r\n不同天气会改变池塘的光照、云影、雾气、雨丝、雨滴涟漪、雪花和闪电效果。天气可以手动选择，也可以根据实际天气自动切换。自动天气支持实时获取天气类型、天气描述和温度，并将不同的实际天气映射到对应的视觉场景。\r\n支持春、夏、秋、冬四季池塘背景，可以自动根据月份切换，也可以手动选择季节。不同季节会对应花瓣、落叶和雪花等季节性效果，并支持调节效果强度。\r\n壁纸提供时间、日期、天气和温度显示。时间组件可以关闭，也可以进入编辑模式，在壁纸上拖动并保存位置。",
+	"file" : "index.html",
+	"general" : 
+	{
+		"localization" : 
+		{
+			"en-us" : 
+			{
+				"ui_auto_weather" : "Follow Real Weather",
+				"ui_clock_edit" : "Adjust Time Position",
+				"ui_day_cycle" : "Light Follows Real Time",
+				"ui_enable_caustics" : "Enable Light Caustics",
+				"ui_enable_feeding" : "Enable Feeding on Click",
+				"ui_fish_count" : "Number of Koi",
+				"ui_fish_size" : "Fish Size Multiplier",
+				"ui_fish_speed" : "Fish Speed Multiplier",
+				"ui_fps" : "FPS Limit",
+				"ui_idle_events" : "Falling Leaves & Petals",
+				"ui_night_dim" : "Night Dimming",
+				"ui_ripple_strength" : "Ripple Strength",
+				"ui_schemecolor" : "Theme Color",
+				"ui_season" : "Season",
+				"ui_season_auto" : "Auto",
+				"ui_season_autumn" : "Autumn",
+				"ui_season_fx" : "Seasonal Effects",
+				"ui_season_spring" : "Spring",
+				"ui_season_summer" : "Summer",
+				"ui_season_winter" : "Winter",
+				"ui_show_clock" : "Show Time and Weather",
+				"ui_shy_fish" : "Fish Avoid Cursor",
+				"ui_water_hue" : "Water Color Hue",
+				"ui_weather" : "Weather",
+				"ui_weather_clear" : "Clear",
+				"ui_weather_cloudy" : "Cloudy",
+				"ui_weather_fog" : "Fog",
+				"ui_weather_heavy_rain" : "Heavy Rain",
+				"ui_weather_heavy_snow" : "Heavy Snow",
+				"ui_weather_light_rain" : "Light Rain",
+				"ui_weather_light_snow" : "Light Snow",
+				"ui_weather_overcast" : "Overcast",
+				"ui_weather_thunderstorm" : "Thunderstorm"
+			},
+			"zh-chs" : 
+			{
+				"ui_auto_weather" : "天气跟随实际变化",
+				"ui_clock_edit" : "调整时间位置",
+				"ui_day_cycle" : "光照跟随现实时间",
+				"ui_enable_caustics" : "启用水面焦散",
+				"ui_enable_feeding" : "点击投食",
+				"ui_fish_count" : "锦鲤数量",
+				"ui_fish_size" : "锦鲤大小",
+				"ui_fish_speed" : "游动速度",
+				"ui_fps" : "帧率上限",
+				"ui_idle_events" : "落叶与花瓣",
+				"ui_night_dim" : "夜间暗度",
+				"ui_ripple_strength" : "涟漪强度",
+				"ui_schemecolor" : "主题色",
+				"ui_season" : "季节",
+				"ui_season_auto" : "自动",
+				"ui_season_autumn" : "秋季",
+				"ui_season_fx" : "季节效果强度",
+				"ui_season_spring" : "春季",
+				"ui_season_summer" : "夏季",
+				"ui_season_winter" : "冬季",
+				"ui_show_clock" : "显示时间与天气",
+				"ui_shy_fish" : "锦鲤避开鼠标",
+				"ui_water_hue" : "水体色相",
+				"ui_weather" : "天气",
+				"ui_weather_clear" : "晴天",
+				"ui_weather_cloudy" : "多云",
+				"ui_weather_fog" : "雾",
+				"ui_weather_heavy_rain" : "大雨",
+				"ui_weather_heavy_snow" : "大雪",
+				"ui_weather_light_rain" : "小雨",
+				"ui_weather_light_snow" : "小雪",
+				"ui_weather_overcast" : "阴天",
+				"ui_weather_thunderstorm" : "雷雨"
+			}
+		},
+		"properties" : 
+		{
+			"autoWeather" : 
+			{
+				"index" : 17,
+				"order" : 117,
+				"text" : "天气跟随实际变化",
+				"type" : "bool",
+				"value" : true
+			},
+			"clockEdit" : 
+			{
+				"index" : 16,
+				"order" : 116,
+				"text" : "调整时间位置",
+				"type" : "bool",
+				"value" : false
+			},
+			"clockShow" : 
+			{
+				"index" : 15,
+				"order" : 115,
+				"text" : "显示时间与天气",
+				"type" : "bool",
+				"value" : true
+			},
+			"dayCycle" : 
+			{
+				"index" : 10,
+				"order" : 110,
+				"text" : "光照跟随现实时间",
+				"type" : "bool",
+				"value" : true
+			},
+			"enableCaustics" : 
+			{
+				"index" : 5,
+				"order" : 105,
+				"text" : "启用水面焦散",
+				"type" : "bool",
+				"value" : true
+			},
+			"enableFeeding" : 
+			{
+				"index" : 6,
+				"order" : 106,
+				"text" : "点击投食",
+				"type" : "bool",
+				"value" : true
+			},
+			"englishMode" : 
+			{
+				"index" : 18,
+				"options" : 
+				[
+					{
+						"label" : "简体中文",
+						"value" : 0
+					},
+					{
+						"label" : "English",
+						"value" : 1
+					}
+				],
+				"order" : 118,
+				"text" : "Language",
+				"type" : "combo",
+				"value" : 0
+			},
+			"fishCount" : 
+			{
+				"index" : 0,
+				"max" : 200,
+				"min" : 10,
+				"order" : 100,
+				"text" : "锦鲤数量",
+				"type" : "slider",
+				"value" : 80
+			},
+			"fishSize" : 
+			{
+				"fraction" : true,
+				"index" : 1,
+				"max" : 3,
+				"min" : 0.5,
+				"order" : 101,
+				"precision" : 2,
+				"text" : "锦鲤大小",
+				"type" : "slider",
+				"value" : 1.45
+			},
+			"fishSpeed" : 
+			{
+				"fraction" : true,
+				"index" : 2,
+				"max" : 3,
+				"min" : 0.5,
+				"order" : 102,
+				"precision" : 2,
+				"text" : "游动速度",
+				"type" : "slider",
+				"value" : 1.5
+			},
+			"fps" : 
+			{
+				"index" : 14,
+				"max" : 120,
+				"min" : 15,
+				"order" : 114,
+				"text" : "帧率上限",
+				"type" : "slider",
+				"value" : 60
+			},
+			"idleEvents" : 
+			{
+				"index" : 9,
+				"order" : 109,
+				"text" : "落叶与花瓣",
+				"type" : "bool",
+				"value" : true
+			},
+			"nightDim" : 
+			{
+				"fraction" : true,
+				"index" : 11,
+				"max" : 1.3,
+				"min" : 0,
+				"order" : 111,
+				"precision" : 2,
+				"text" : "夜间暗度",
+				"type" : "slider",
+				"value" : 1
+			},
+			"rippleStrength" : 
+			{
+				"fraction" : true,
+				"index" : 4,
+				"max" : 5,
+				"min" : 0.1,
+				"order" : 104,
+				"precision" : 2,
+				"text" : "涟漪强度",
+				"type" : "slider",
+				"value" : 1
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "主题色",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"season" : 
+			{
+				"index" : 12,
+				"options" : 
+				[
+					{
+						"label" : "自动 / Auto",
+						"value" : 0
+					},
+					{
+						"label" : "春季 / Spring",
+						"value" : 1
+					},
+					{
+						"label" : "夏季 / Summer",
+						"value" : 2
+					},
+					{
+						"label" : "秋季 / Autumn",
+						"value" : 3
+					},
+					{
+						"label" : "冬季 / Winter",
+						"value" : 4
+					}
+				],
+				"order" : 112,
+				"text" : "季节",
+				"type" : "combo",
+				"value" : 0
+			},
+			"seasonFx" : 
+			{
+				"index" : 13,
+				"max" : 3,
+				"min" : 0,
+				"order" : 113,
+				"text" : "季节效果强度",
+				"type" : "slider",
+				"value" : 2
+			},
+			"shyFish" : 
+			{
+				"index" : 7,
+				"order" : 107,
+				"text" : "锦鲤避开鼠标",
+				"type" : "bool",
+				"value" : true
+			},
+			"waterHue" : 
+			{
+				"index" : 3,
+				"max" : 360,
+				"min" : 0,
+				"order" : 103,
+				"text" : "水体色相",
+				"type" : "slider",
+				"value" : 195
+			},
+			"weather" : 
+			{
+				"index" : 8,
+				"options" : 
+				[
+					{
+						"label" : "晴天 / Clear",
+						"value" : 0
+					},
+					{
+						"label" : "多云 / Cloudy",
+						"value" : 1
+					},
+					{
+						"label" : "阴天 / Overcast",
+						"value" : 2
+					},
+					{
+						"label" : "雾 / Fog",
+						"value" : 3
+					},
+					{
+						"label" : "小雨 / Light Rain",
+						"value" : 4
+					},
+					{
+						"label" : "大雨 / Heavy Rain",
+						"value" : 5
+					},
+					{
+						"label" : "雷雨 / Thunderstorm",
+						"value" : 6
+					},
+					{
+						"label" : "小雪 / Light Snow",
+						"value" : 7
+					},
+					{
+						"label" : "大雪 / Heavy Snow",
+						"value" : 8
+					}
+				],
+				"order" : 108,
+				"text" : "天气",
+				"type" : "combo",
+				"value" : 0
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"tags" : [ "Relaxing" ],
+	"title" : "桌面鱼池",
+	"type" : "Web",
+	"version" : 4,
+	"visibility" : "public",
+	"workshopid" : "3810169247",
+	"workshopurl" : "steam://url/CommunityFilePage/3810169247"
+}
