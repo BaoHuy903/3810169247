@@ -1,6 +1,6 @@
 {
   "contentrating": "Everyone",
-  "description": "Hình nền hồ cá Koi động bằng tiếng Việt. Có thời tiết, bốn mùa, đồng hồ, ba khung ảnh có thể tải ảnh riêng, treo và kéo thả. Hỗ trợ chế độ không giới hạn FPS (tùy thuộc Wallpaper Engine và màn hình).",
+  "description": "Hồ cá Koi với khung ảnh tùy chỉnh: thêm khung, chọn ảnh, kéo thả, kéo góc để phóng to thu nhỏ và lưu vị trí.",
   "file": "index.html",
   "general": {
     "localization": {
@@ -339,6 +339,193 @@
         "text": "Thời tiết",
         "type": "combo",
         "value": 0
+      },
+      "photoFrame1Show": {
+        "type": "bool",
+        "value": true,
+        "text": "Khung ảnh 1 - Hiển thị",
+        "order": 200
+      },
+      "photoFrame1": {
+        "type": "file",
+        "value": "",
+        "text": "Khung ảnh 1 - Chọn ảnh",
+        "order": 201,
+        "fileType": "image"
+      },
+      "photoFrame1X": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "text": "Khung ảnh 1 - Vị trí ngang (%)",
+        "order": 202
+      },
+      "photoFrame1Y": {
+        "type": "slider",
+        "value": 14,
+        "min": 0,
+        "max": 100,
+        "text": "Khung ảnh 1 - Vị trí dọc (%)",
+        "order": 203
+      },
+      "photoFrame2Show": {
+        "type": "bool",
+        "value": true,
+        "text": "Khung ảnh 2 - Hiển thị",
+        "order": 210
+      },
+      "photoFrame2": {
+        "type": "file",
+        "value": "",
+        "text": "Khung ảnh 2 - Chọn ảnh",
+        "order": 211,
+        "fileType": "image"
+      },
+      "photoFrame2X": {
+        "type": "slider",
+        "value": 79,
+        "min": 0,
+        "max": 100,
+        "text": "Khung ảnh 2 - Vị trí ngang (%)",
+        "order": 212
+      },
+      "photoFrame2Y": {
+        "type": "slider",
+        "value": 16,
+        "min": 0,
+        "max": 100,
+        "text": "Khung ảnh 2 - Vị trí dọc (%)",
+        "order": 213
+      },
+      "photoFrame3Show": {
+        "type": "bool",
+        "value": true,
+        "text": "Khung ảnh 3 - Hiển thị",
+        "order": 220
+      },
+      "photoFrame3": {
+        "type": "file",
+        "value": "",
+        "text": "Khung ảnh 3 - Chọn ảnh",
+        "order": 221,
+        "fileType": "image"
+      },
+      "photoFrame3X": {
+        "type": "slider",
+        "value": 5,
+        "min": 0,
+        "max": 100,
+        "text": "Khung ảnh 3 - Vị trí ngang (%)",
+        "order": 222
+      },
+      "photoFrame3Y": {
+        "type": "slider",
+        "value": 64,
+        "min": 0,
+        "max": 100,
+        "text": "Khung ảnh 3 - Vị trí dọc (%)",
+        "order": 223
+      },
+      "photoFramesEdit": {
+        "type": "bool",
+        "value": false,
+        "text": "Khung ảnh - Bật chế độ chỉnh sửa (kéo góc để đổi kích thước)",
+        "order": 195
+      },
+      "photoFrame1Size": {
+        "type": "slider",
+        "value": 220,
+        "min": 90,
+        "max": 800,
+        "text": "Khung ảnh 1 - Kích thước (px)",
+        "order": 214
+      },
+      "photoFrame2Size": {
+        "type": "slider",
+        "value": 220,
+        "min": 90,
+        "max": 800,
+        "text": "Khung ảnh 2 - Kích thước (px)",
+        "order": 224
+      },
+      "photoFrame3Size": {
+        "type": "slider",
+        "value": 220,
+        "min": 90,
+        "max": 800,
+        "text": "Khung ảnh 3 - Kích thước (px)",
+        "order": 234
+      },
+      "audioEnabled": {
+        "type": "bool",
+        "value": true,
+        "text": "Âm thanh - Bật Audio Reactive",
+        "order": 250
+      },
+      "audioBars": {
+        "type": "bool",
+        "value": true,
+        "text": "Âm thanh - Hiện cột sóng nhạc",
+        "order": 251
+      },
+      "audioWater": {
+        "type": "bool",
+        "value": true,
+        "text": "Âm thanh - Gợn sóng mặt nước theo bass",
+        "order": 252
+      },
+      "audioGlow": {
+        "type": "bool",
+        "value": true,
+        "text": "Âm thanh - Ánh sáng theo nhạc",
+        "order": 253
+      },
+      "audioSensitivity": {
+        "type": "slider",
+        "value": 100,
+        "text": "Âm thanh - Độ nhạy (%)",
+        "order": 254,
+        "min": 0,
+        "max": 300
+      },
+      "audioBarCount": {
+        "type": "slider",
+        "value": 48,
+        "text": "Âm thanh - Số cột sóng nhạc",
+        "order": 255,
+        "min": 12,
+        "max": 96
+      },
+      "audioMove": {
+        "type": "bool",
+        "value": false,
+        "text": "Âm thanh - Bật kéo thả vị trí sóng nhạc",
+        "order": 256
+      },
+      "audioPositionX": {
+        "type": "slider",
+        "value": 50,
+        "min": 0,
+        "max": 100,
+        "text": "Âm thanh - Vị trí ngang (%)",
+        "order": 257
+      },
+      "audioPositionY": {
+        "type": "slider",
+        "value": 94,
+        "min": 0,
+        "max": 100,
+        "text": "Âm thanh - Vị trí dọc (%)",
+        "order": 258
+      },
+      "audioWidth": {
+        "type": "slider",
+        "value": 70,
+        "min": 15,
+        "max": 100,
+        "text": "Âm thanh - Chiều rộng sóng nhạc (%)",
+        "order": 259
       }
     }
   },

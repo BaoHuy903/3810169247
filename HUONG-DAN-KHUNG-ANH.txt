@@ -1,0 +1,13 @@
+KOI POND - THEM KHUNG ANH VA KEO GOC DOI KICH THUOC
+
+1. Giai nen vao thu muc cha ...\431960, de cac file nam truc tiep trong ...\431960\3810169247\.
+2. Mo lai Wallpaper Engine, chon lai hinh nen Koi Pond.
+3. Tren hinh nen, bam 'Chinh sua khung anh' o goc duoi phai (neu Wallpaper Engine cho phep tuong tac chuot).
+4. Bam '+ Them khung anh' de them khung moi, toi da 16 khung.
+5. Keo giua khung de di chuyen, keo o vuong mau xanh tai goc duoi phai de phong to/thu nho.
+6. Bam 'Chon anh' de chon anh, 'Xoa anh' de bo anh, 'Xoa khung' de xoa khung.
+7. Bam 'Hoan tat chinh sua' de khoa vi tri. Vi tri, kich thuoc, anh tai len duoc luu trong localStorage cua hinh nen.
+8. Neu khong bam duoc nut tren desktop, vao cai dat Wallpaper Engine bat 'Khung anh - Bat che do chinh sua'. Wallpaper Engine can cho phep tuong tac chuot voi wallpaper.
+9. Trong cai dat WE co them thanh truot 'Khung anh 1/2/3 - Kich thuoc (px)' cho 3 khung dau.
+
+Luu y: Wallpaper Engine khong ho tro tao them dong chon file tuy y trong bang cai dat theo so khung. Khung thu 4 tro di duoc them va chon anh truc tiep tren hinh nen. Chua kiem thu truc tiep trong Wallpaper Engine.

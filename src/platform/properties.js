@@ -37,6 +37,17 @@ export function attachProperties(config, syncKois) {
             if (key === 'fishCount') syncKois();
             if (key === 'waterHue') document.body.style.backgroundColor = 'hsl(' + value + ',75%,18%)';
         }
+        // Chuyển cài đặt khung ảnh từ Wallpaper Engine sang lớp hiển thị DOM.
+        const photo = {};
+        for (const [key, prop] of Object.entries(properties || {})) {
+            if (/^photoFrame[123](Show|X|Y|Size)?$/.test(key) || key === 'photoFramesEdit') {
+                if (prop && 'value' in prop) photo[key] = prop.value;
+            }
+        }
+        if (Object.keys(photo).length) {
+            window.__koiPhotoProperties = { ...(window.__koiPhotoProperties || {}), ...photo };
+            window.dispatchEvent(new CustomEvent('koi:photo-properties', { detail: photo }));
+        }
         const sentEdit = properties?.clockEdit && 'value' in properties.clockEdit ? properties.clockEdit.value : undefined;
         if (sentEdit === true) config.clockEdit = config.clockEditConsumed !== true;
         else if (sentEdit === false) {

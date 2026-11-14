@@ -1,0 +1,14 @@
+Koi Pond - sửa lỗi lưu khung ảnh và chẩn đoán âm thanh
+
+1. Giải nén vào thư mục cha 431960, ghi đè thư mục 3810169247.
+2. Chọn hình nền khác rồi chọn lại Koi Pond.
+3. Bật Chỉnh sửa khung ảnh, kéo thả và thay đổi kích thước, nhấn Hoàn tất.
+4. Thử đổi hình nền rồi quay lại để kiểm tra vị trí đã lưu.
+5. Phát nhạc và quan sát dòng trạng thái Âm thanh ở góc trái dưới.
+   - Đã kết nối, chờ nhạc: API đã có nhưng chưa nhận mẫu.
+   - Đang nhận dữ liệu: Wallpaper Engine đã gửi mẫu âm thanh.
+   - Chưa cung cấp API: kiểm tra đang dùng Wallpaper Engine, không phải trình duyệt.
+6. Trong Wallpaper Engine, bật Audio recording / Ghi âm thanh và đảm bảo
+   thiết bị âm thanh được chọn đúng, âm thanh không bị tắt trong cài đặt.
+
+Lưu ý: Chưa kiểm thử trực tiếp trong ứng dụng Wallpaper Engine.

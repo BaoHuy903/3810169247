@@ -1,0 +1,10 @@
+DI CHUYEN AUDIO REACTIVE
+
+1. Mo cai dat hinh nen Wallpaper Engine.
+2. Bat "Am thanh - Bat keo tha vi tri song nhac".
+3. Keo nut "Keo de di chuyen song nhac" tren hinh nen.
+4. Tat che do keo tha sau khi xong. Vi tri duoc luu tu dong.
+5. Neu Wallpaper Engine khong cho click tren desktop, su dung hai thanh truot "Vi tri ngang" va "Vi tri doc".
+6. Thanh truot "Chieu rong song nhac" thay doi kich thuoc bo cot.
+
+Luu y: chi bo cot song nhac co vi tri co dinh de di chuyen; hieu ung nuoc va anh sang tiep tuc bao phu ho ca.
