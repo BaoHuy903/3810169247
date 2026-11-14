@@ -10,7 +10,7 @@ function asProperties(flat) {
 export function attachProperties(config, syncKois) {
     const previous = window.wallpaperPropertyListener, previousLively = window.livelyPropertyListener;
     window.__koiExternalHost = !!previous || !!previousLively;
-    const numeric = { fishCount: [0, 300], fishSpeed: [0, 5], fishSize: [0.1, 5], rippleStrength: [0, 5], waterHue: [0, 360], weather: [0, 8], nightDim: [0, 1.3], season: [0, 4], seasonFx: [0, 3], englishMode: [0, 1], fps: [0, 144], clockAnchor: [0, 3], clockX: [0, 1], clockY: [0, 1] };
+    const numeric = { fishCount: [0, 300], fishSpeed: [0, 5], fishSize: [0.1, 5], rippleStrength: [0, 5], waterHue: [0, 360], weather: [0, 8], nightDim: [0, 1.3], season: [0, 4], seasonFx: [0, 3], englishMode: [0, 1], fps: [0, 240], clockAnchor: [0, 3], clockX: [0, 1], clockY: [0, 1] };
     let started = false;
     const applyUserProperties = (properties, options = {}) => {
         for (const [key, property] of Object.entries(properties || {})) {

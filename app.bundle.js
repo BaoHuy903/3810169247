@@ -2867,7 +2867,7 @@ function asProperties(flat) {
 function attachProperties(config, syncKois) {
     const previous = window.wallpaperPropertyListener, previousLively = window.livelyPropertyListener;
     window.__koiExternalHost = !!previous || !!previousLively;
-    const numeric = { fishCount: [0, 300], fishSpeed: [0, 5], fishSize: [0.1, 5], rippleStrength: [0, 5], waterHue: [0, 360], weather: [0, 8], nightDim: [0, 1.3], season: [0, 4], seasonFx: [0, 3], englishMode: [0, 1], fps: [0, 144], clockAnchor: [0, 3], clockX: [0, 1], clockY: [0, 1] };
+    const numeric = { fishCount: [0, 300], fishSpeed: [0, 5], fishSize: [0.1, 5], rippleStrength: [0, 5], waterHue: [0, 360], weather: [0, 8], nightDim: [0, 1.3], season: [0, 4], seasonFx: [0, 3], englishMode: [0, 1], fps: [0, 240], clockAnchor: [0, 3], clockX: [0, 1], clockY: [0, 1] };
     let started = false;
     const applyUserProperties = (properties, options = {}) => {
         for (const [key, property] of Object.entries(properties || {})) {
@@ -3738,7 +3738,7 @@ function createClock({ viewport, config = {}, environment, save = null }) {
         clockTime = String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
         clockDate = english
             ? new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', weekday: 'short' }).format(d)
-            : (d.getMonth() + 1) + '月' + d.getDate() + '日  星期' + ['日', '一', '二', '三', '四', '五', '六'][d.getDay()];
+            : (d.getDay() === 0 ? 'Chủ nhật' : 'Thứ ' + (d.getDay() + 1)) + ', ' + d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
     }
 
     function weatherText() {
@@ -3847,7 +3847,7 @@ function createClock({ viewport, config = {}, environment, save = null }) {
         g.textBaseline = 'middle';
         g.font = '12px ' + T.font;
         g.fillStyle = 'rgba(240,246,242,0.92)';
-        g.fillText(Number(config.englishMode) === 1 ? 'Drag clock' : '拖动时间组件', bx + 12, by + barH / 2);
+        g.fillText(Number(config.englishMode) === 1 ? 'Drag clock' : 'Kéo đồng hồ', bx + 12, by + barH / 2);
         const buttonW = 56, buttonH = 24;
         const buttonX = bx + barW - buttonW - 8;
         const buttonY = by + (barH - buttonH) / 2;
@@ -3857,7 +3857,7 @@ function createClock({ viewport, config = {}, environment, save = null }) {
         g.fillStyle = '#34252b';
         g.font = '600 12px ' + T.font;
         g.textAlign = 'center';
-        g.fillText(Number(config.englishMode) === 1 ? 'Save' : '保存', buttonX + buttonW / 2, buttonY + buttonH / 2);
+        g.fillText(Number(config.englishMode) === 1 ? 'Save' : 'Lưu', buttonX + buttonW / 2, buttonY + buttonH / 2);
         g.restore();
         actionBar = { x: bx, y: by, w: barW, h: barH };
     }

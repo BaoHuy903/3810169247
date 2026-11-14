@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koi Pond Wallpaper</title>
+    <title>Hồ cá Koi - Hình nền động</title>
     <!-- 首帧底色内联:外部 style.css 要等一个请求,而这几毫秒里露出来的是 WE/CEF 的默认白。
      内联之后 HTML 一解析完就是深水色,白闪被压到最短。值必须与 style.css 的 body 底色一致。 -->
 <style>html,body{background:#0a1f20}</style>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="photo-frames.css">
 </head>
 <body>
     <div id="vignette"></div>
@@ -22,5 +23,6 @@
     <script>globalThis.KoiShared = { THEME, KOI_SHAPE, WaterGL };</script>
     <!-- Classic bundle works both in Wallpaper Engine and when index.html is opened via file://. -->
     <script src="app.bundle.js"></script>
+    <script src="photo-frames.js"></script>
 </body>
 </html>

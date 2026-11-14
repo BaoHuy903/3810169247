@@ -48,7 +48,7 @@ export function createClock({ viewport, config = {}, environment, save = null })
         clockTime = String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
         clockDate = english
             ? new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', weekday: 'short' }).format(d)
-            : (d.getMonth() + 1) + '月' + d.getDate() + '日  星期' + ['日', '一', '二', '三', '四', '五', '六'][d.getDay()];
+            : (d.getDay() === 0 ? 'Chủ nhật' : 'Thứ ' + (d.getDay() + 1)) + ', ' + d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
     }
 
     function weatherText() {
@@ -157,7 +157,7 @@ export function createClock({ viewport, config = {}, environment, save = null })
         g.textBaseline = 'middle';
         g.font = '12px ' + T.font;
         g.fillStyle = 'rgba(240,246,242,0.92)';
-        g.fillText(Number(config.englishMode) === 1 ? 'Drag clock' : '拖动时间组件', bx + 12, by + barH / 2);
+        g.fillText(Number(config.englishMode) === 1 ? 'Drag clock' : 'Kéo đồng hồ', bx + 12, by + barH / 2);
         const buttonW = 56, buttonH = 24;
         const buttonX = bx + barW - buttonW - 8;
         const buttonY = by + (barH - buttonH) / 2;
@@ -167,7 +167,7 @@ export function createClock({ viewport, config = {}, environment, save = null })
         g.fillStyle = '#34252b';
         g.font = '600 12px ' + T.font;
         g.textAlign = 'center';
-        g.fillText(Number(config.englishMode) === 1 ? 'Save' : '保存', buttonX + buttonW / 2, buttonY + buttonH / 2);
+        g.fillText(Number(config.englishMode) === 1 ? 'Save' : 'Lưu', buttonX + buttonW / 2, buttonY + buttonH / 2);
         g.restore();
         actionBar = { x: bx, y: by, w: barW, h: barH };
     }

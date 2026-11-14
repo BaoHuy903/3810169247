@@ -1,0 +1,8 @@
+1. Giải nén gói này vào THƯ MỤC GỐC của repository 3810169247.
+2. Trong VS Code Terminal: python cap_nhat.py
+3. Chạy: node tools/build-bundle.mjs
+4. Thử mở index.html bằng trình duyệt (hoặc Wallpaper Engine).
+5. git add .
+6. git commit -m "Viet hoa, them khung anh, FPS"
+7. git push origin main
+Lưu ý: bản này là bản vá bổ sung trên mã nguồn gốc, không phải cả dự án.
