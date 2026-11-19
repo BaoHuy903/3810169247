@@ -1,0 +1,9 @@
+KOI POND - BẢN KHÔNG AUDIO, TỰ LƯU ẢNH
+
+- Đã xóa Audio Reactive khỏi giao diện và bảng cài đặt.
+- Ảnh chọn trong từng khung được lưu thành hai bản: ảnh chất lượng cao trong IndexedDB và bản dự phòng nhỏ trong localStorage.
+- Vị trí, kích thước, số lượng khung ảnh được lưu trong localStorage (khóa cũ v4 để giữ bố cục).
+- Nếu bạn xóa dữ liệu trình duyệt Wallpaper Engine, xóa hình nền, thay đổi nguồn hình nền hoặc Steam thay thế thư mục, dữ liệu lưu có thể không còn.
+
+CÀI ĐẶT: Thoát Wallpaper Engine, sao lưu thư mục 3810169247, giải nén ZIP vào thư mục cha 431960 và ghi đè; sau đó mở lại hình nền.
+KIỂM TRA: Chọn ảnh, kéo thả, bấm Hoàn tất, chuyển sang hình nền khác rồi quay lại. Chưa thể xác minh thực tế trong Wallpaper Engine từ môi trường này.
